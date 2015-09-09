@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 
 public class MainActivity extends Activity {
@@ -12,6 +13,14 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+       ImageView MainButton1=(ImageView)findViewById(R.id.imageView1);
+       ImageView MainButton2=(ImageView)findViewById(R.id.imageView2);
+       ImageView MainButton3=(ImageView)findViewById(R.id.imageView3);
+       ImageView MainButton4=(ImageView)findViewById(R.id.imageView4);
+       
+       
+        
     }
 
     @Override

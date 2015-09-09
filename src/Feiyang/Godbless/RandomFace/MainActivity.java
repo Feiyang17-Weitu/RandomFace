@@ -2,8 +2,7 @@ package Feiyang.Godbless.RandomFace;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 
 
@@ -19,26 +18,43 @@ public class MainActivity extends Activity {
        ImageView MainButton3=(ImageView)findViewById(R.id.imageView3);
        ImageView MainButton4=(ImageView)findViewById(R.id.imageView4);
        
+       MainButton3.setOnClickListener(new MainButton3Listener());
        
-        
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+    class MainButton1Listener implements View.OnClickListener
+    {
+    	@Override
+    	public void onClick(View view)
+    	{
+    		
+    	}
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+    
+    class MainButton2Listener implements View.OnClickListener
+    {
+    	@Override
+    	public void onClick(View view)
+    	{
+    		
+    	}
+    }
+    
+    class MainButton3Listener implements View.OnClickListener
+    {
+    	@Override
+    	public void onClick(View view)
+    	{
+    		
+    	}
+    }
+    
+    class MainButton4Listener implements View.OnClickListener
+    {
+    	@Override
+    	public void onClick(View view)
+    	{
+    		
+    	}
     }
 }

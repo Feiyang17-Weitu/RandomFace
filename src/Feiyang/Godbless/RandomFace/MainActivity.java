@@ -1,6 +1,7 @@
 package Feiyang.Godbless.RandomFace;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -19,7 +20,10 @@ public class MainActivity extends Activity {
        ImageView MainButton3=(ImageView)findViewById(R.id.imageView3);
        ImageView MainButton4=(ImageView)findViewById(R.id.imageView4);
        
+       MainButton1.setOnClickListener(new MainButton1Listener());
+       MainButton2.setOnClickListener(new MainButton2Listener());
        MainButton3.setOnClickListener(new MainButton3Listener());
+       MainButton4.setOnClickListener(new MainButton4Listener());
        
     }
 
@@ -46,7 +50,9 @@ public class MainActivity extends Activity {
     	@Override
     	public void onClick(View view)
     	{
-    		Toast.makeText(getApplicationContext(), "ImageView3", Toast.LENGTH_LONG).show();
+    		//Toast.makeText(getApplicationContext(), "ImageView3", Toast.LENGTH_LONG).show();
+    		Intent TextDetectIntent = new Intent(MainActivity.this,TextDetectActivity.class);
+    		startActivity(TextDetectIntent);
     	}
     }
     

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
@@ -27,7 +28,7 @@ public class MainActivity extends Activity {
     	@Override
     	public void onClick(View view)
     	{
-    		
+    		Toast.makeText(getApplicationContext(), "ImageView1", Toast.LENGTH_LONG).show();
     	}
     }
     
@@ -36,7 +37,7 @@ public class MainActivity extends Activity {
     	@Override
     	public void onClick(View view)
     	{
-    		
+    		Toast.makeText(getApplicationContext(), "ImageView2", Toast.LENGTH_LONG).show();
     	}
     }
     
@@ -45,7 +46,7 @@ public class MainActivity extends Activity {
     	@Override
     	public void onClick(View view)
     	{
-    		
+    		Toast.makeText(getApplicationContext(), "ImageView3", Toast.LENGTH_LONG).show();
     	}
     }
     
@@ -54,7 +55,7 @@ public class MainActivity extends Activity {
     	@Override
     	public void onClick(View view)
     	{
-    		
+    		Toast.makeText(getApplicationContext(), "ImageView4", Toast.LENGTH_LONG).show();
     	}
     }
 }
